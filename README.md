@@ -1,6 +1,6 @@
 # &lt;hire-me&gt;
 
-This Web Component is for @carlosbranco hire me at enjoei :P 
+This Web Component is for @carlosbrando hire me at enjoei :P 
 
 Original component page: [braziljs-light](https://github.com/braziljs/braziljs-light)
 
