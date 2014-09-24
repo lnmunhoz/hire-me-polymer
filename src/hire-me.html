@@ -1,19 +1,19 @@
 <polymer-element name="hire-me">
-	<template>
-		<div id="container">
-			<span>&lt;</span>
-			<span>H</span>
-			<span>I</span>
-			<span>R</span>
-			<span>E</span>
-			<span>-</span>
-			<span>M</span>
-			<span>E</span>
-			<span>!</span>
-			<span>&gt;</span>
-		</div>
+<template>
+	<div id="container">
+		<span>&lt;</span>
+		<span>H</span>
+		<span>I</span>
+		<span>R</span>
+		<span>E</span>
+		<span>-</span>
+		<span>M</span>
+		<span>E</span>
+		<span>!</span>
+		<span>&gt;</span>
+	</div>
 
-		<style>
+	<style>
 		#container {
 			position: absolute;
 			top: 0;
@@ -76,14 +76,17 @@
 				text-shadow: 0 0 15px;
 			}
 		}
-		</style>
-	</template>
-	<script>
+	</style>
+</template>
+<script>
 	Polymer('hire-me', {
 		created: function() {
 			var that = this;
 
 			window.addEventListener('devicelight', function(event) {
+
+
+
 				if (event.value <= 10) {
 					that.$.container.classList.add('on');
 				}
@@ -91,7 +94,15 @@
 					that.$.container.classList.remove('on');
 				}
 			});
+		},
+
+		domReady: function(){
+			if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
+				document.querySelector("hire-me").$.container.classList.add('on');
+				console.log('This is the behaviour on Firefox when you turn off the lights!');
+			}
+
 		}
 	});
-	</script>
+</script>
 </polymer-element>
