@@ -1,4 +1,4 @@
-# &lt;hire-met&gt;
+# &lt;hire-me&gt;
 
 This Web Component is for @carlosbranco hire me at enjoei :P 
 
