@@ -1,0 +1,97 @@
+<polymer-element name="hire-me">
+	<template>
+		<div id="container">
+			<span>&lt;</span>
+			<span>H</span>
+			<span>I</span>
+			<span>R</span>
+			<span>E</span>
+			<span>-</span>
+			<span>M</span>
+			<span>E</span>
+			<span>!</span>
+			<span>&gt;</span>
+		</div>
+
+		<style>
+		#container {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 1em;
+			margin: auto;
+			display: block;
+		}
+		#container span{
+			display: inline-block;
+			color: #FFF;
+			text-shadow: 0 0 15px;
+		}
+		.on span:nth-child(odd) {
+			-webkit-animation: bglow .3s ease infinite;
+			-moz-animation: bglow .3s ease infinite;
+			animation: bglow .3s ease infinite;
+		}
+		.on span:nth-child(even) {
+			-webkit-animation: rglow .3s ease infinite;
+			-moz-animation: rglow .3s ease infinite;
+			animation: rglow .3s ease infinite;
+		}
+
+		@-webkit-keyframes bglow {
+			0% {
+				color: rgb(0, 135, 211);
+				text-shadow: 0 0 15px;
+			}
+		}
+		@-moz-keyframes bglow {
+			0% {
+				color: rgb(0, 135, 211);
+				text-shadow: 0 0 15px;
+			}
+		}
+		@keyframes bglow {
+			0% {
+				color: rgb(0, 135, 211);
+				text-shadow: 0 0 15px;
+			}
+		}
+
+		@-webkit-keyframes rglow {
+			100% {
+				color: rgb(233, 54, 40);
+				text-shadow: 0 0 15px;
+			}
+		}
+		@-moz-keyframes rglow {
+			100% {
+				color: rgb(233, 54, 40);
+				text-shadow: 0 0 15px;
+			}
+		}
+		@keyframes rglow {
+			100% {
+				color: rgb(233, 54, 40);
+				text-shadow: 0 0 15px;
+			}
+		}
+		</style>
+	</template>
+	<script>
+	Polymer('hire-me', {
+		created: function() {
+			var that = this;
+
+			window.addEventListener('devicelight', function(event) {
+				if (event.value <= 10) {
+					that.$.container.classList.add('on');
+				}
+				else {
+					that.$.container.classList.remove('on');
+				}
+			});
+		}
+	});
+	</script>
+</polymer-element>
