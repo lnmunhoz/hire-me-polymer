@@ -85,8 +85,6 @@
 
 			window.addEventListener('devicelight', function(event) {
 
-
-
 				if (event.value <= 10) {
 					that.$.container.classList.add('on');
 				}
@@ -94,14 +92,6 @@
 					that.$.container.classList.remove('on');
 				}
 			});
-		},
-
-		domReady: function(){
-			if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
-				document.querySelector("hire-me").$.container.classList.add('on');
-				console.log('This is the behaviour on Firefox when you turn off the lights!');
-			}
-
 		}
 	});
 </script>
