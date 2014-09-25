@@ -6,4 +6,6 @@ This Web Component is for @carlosbrando hire me at enjoei :P
 - Original lamp page: [Hornebom CodePen](http://codepen.io/Hornebom/pen/clDsr)
 - Live for the lamp by me.
 
+> **Attention:** Ambient Light API only works in Firefox 22+ (Mac OS X).
+
 [MIT License](http://opensource.org/licenses/MIT)
