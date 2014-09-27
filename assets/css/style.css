@@ -41,6 +41,7 @@ body {
 
 
 .lamp {
+  cursor:pointer;
   position:relative;
   margin:0 auto;
   width:.7rem;
@@ -56,7 +57,6 @@ body {
 .lamp:before, .lamp:after {
   content:'';
   position:absolute;
-  cursor:pointer;
 }
 
 .lamp:before {
