@@ -9,4 +9,4 @@ This Web Component is for @carlosbrando hire me at enjoei :P
 > **Attention:** Ambient Light API only works in Firefox 22+ (Mac OS X).
 
 ## License
-[MIT License](http://opensource.org/licenses/MIT) © Lucas N. Munhoz
+[MIT License](http://lnmunhoz.mit-license.org) © Lucas N. Munhoz
